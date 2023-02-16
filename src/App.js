@@ -1,29 +1,16 @@
-import ResponsiveAppBar from "./components/ResponsiveAppBar";
-import SkillSearchTextField from "./components/SkillSearchTextField";
-import AlignItemsList from "./components/AlignItemsList";
-import Card from "./components/UI/Card";
+import * as React from 'react';
+import {Route, Routes} from 'react-router-dom';
 
-import './App.css';
+import Home from './pages/Home';
+import AllSkills from './pages/AllSkills';
 
-function App() {
+export default function App() {
 	return (
-
 		<div className="App">
-
-			<ResponsiveAppBar/>
-
-			<Card>
-				<h3>Skill Suche</h3>
-				<SkillSearchTextField/>
-			</Card>
-
-			<Card>
-				<h3>Mitarbeiter</h3>
-				<AlignItemsList/>
-			</Card>
-
+			<Routes>
+				<Route path="/" element={<Home/>}/>
+				<Route path="allskills" element={<AllSkills/>}/>
+			</Routes>
 		</div>
 	);
 }
-
-export default App;

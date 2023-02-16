@@ -1,11 +1,14 @@
 import * as React from 'react';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 import avatar1 from '../pictures/dummy/areyer.png';
 import avatar2 from '../pictures/dummy/elinde.png';
@@ -13,10 +16,18 @@ import avatar3 from '../pictures/dummy/lgering.png';
 
 export default function AlignItemsList() {
 	return (
-		<List sx={{width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
-			<ListItem alignItems="flex-start">
+		<List>
+			<ListItem
+				secondaryAction={
+					<IconButton edge="end" aria-label="delete">
+						<AccountBoxIcon/>
+					</IconButton>
+				}
+			>
 				<ListItemAvatar>
-					<Avatar alt="aReyer" src={avatar1}/>
+					<Avatar>
+						<Avatar alt="aReyer" src={avatar1}/>
+					</Avatar>
 				</ListItemAvatar>
 				<ListItemText
 					primary="Alberto Reyer"
