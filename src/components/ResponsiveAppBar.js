@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 import logo from '../pictures/mini_logo.png';
-import avatar from '../pictures/avatar.svg';
+import avatar from '../pictures/dummy/nhorn.png';
 
 
 const pages = ['Mein Profil', 'Alle Skills', 'Kontakt'];

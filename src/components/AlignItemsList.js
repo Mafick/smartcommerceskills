@@ -1,21 +1,25 @@
 import * as React from 'react';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+
+import avatar1 from '../pictures/dummy/areyer.png';
+import avatar2 from '../pictures/dummy/elinde.png';
+import avatar3 from '../pictures/dummy/lgering.png';
 
 export default function AlignItemsList() {
 	return (
 		<List sx={{width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
 			<ListItem alignItems="flex-start">
 				<ListItemAvatar>
-					<Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"/>
+					<Avatar alt="aReyer" src={avatar1}/>
 				</ListItemAvatar>
 				<ListItemText
-					primary="Brunch this weekend?"
+					primary="Alberto Reyer"
 					secondary={
 						<React.Fragment>
 							<Typography
@@ -24,9 +28,8 @@ export default function AlignItemsList() {
 								variant="body2"
 								color="text.primary"
 							>
-								Ali Connors
 							</Typography>
-							{" — I'll be in your neighborhood doing errands this…"}
+							{'Beschreibungs Text von -Mein Profil-'}
 						</React.Fragment>
 					}
 				/>
@@ -34,10 +37,10 @@ export default function AlignItemsList() {
 			<Divider variant="inset" component="li"/>
 			<ListItem alignItems="flex-start">
 				<ListItemAvatar>
-					<Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg"/>
+					<Avatar alt="eLinde" src={avatar2}/>
 				</ListItemAvatar>
 				<ListItemText
-					primary="Summer BBQ"
+					primary="Evelin Linde"
 					secondary={
 						<React.Fragment>
 							<Typography
@@ -46,9 +49,8 @@ export default function AlignItemsList() {
 								variant="body2"
 								color="text.primary"
 							>
-								to Scott, Alex, Jennifer
 							</Typography>
-							{" — Wish I could come, but I'm out of town this…"}
+							{'Beschreibungs Text von -Mein Profil-'}
 						</React.Fragment>
 					}
 				/>
@@ -56,10 +58,10 @@ export default function AlignItemsList() {
 			<Divider variant="inset" component="li"/>
 			<ListItem alignItems="flex-start">
 				<ListItemAvatar>
-					<Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg"/>
+					<Avatar alt="lGering" src={avatar3}/>
 				</ListItemAvatar>
 				<ListItemText
-					primary="Oui Oui"
+					primary="Lucas Gering"
 					secondary={
 						<React.Fragment>
 							<Typography
@@ -68,9 +70,8 @@ export default function AlignItemsList() {
 								variant="body2"
 								color="text.primary"
 							>
-								Sandra Adams
 							</Typography>
-							{' — Do you have Paris recommendations? Have you ever…'}
+							{'Beschreibungs Text von -Mein Profil-'}
 						</React.Fragment>
 					}
 				/>
