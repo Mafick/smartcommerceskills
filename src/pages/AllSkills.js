@@ -1,5 +1,9 @@
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
-import EnhancedTable from "../components/EnhancedTable";
+import StickyHeadTable from "../components/StickyHeadTable";
+import {Card} from "@mui/material";
+import ColorToggleButton from "../components/ColorToggleButton";
+import Box from "@mui/material/Box";
+import * as React from "react";
 
 function AllSkills() {
 	return (
@@ -8,7 +12,14 @@ function AllSkills() {
 
 			<ResponsiveAppBar/>
 
-			<EnhancedTable/>
+			<Box sx={{mt: 4, mb: 2, textAlign: "center"}}>
+				<ColorToggleButton/>
+			</Box>
+
+			<Card sx={{mt: 4, mb: 2}}>
+				<StickyHeadTable/>
+			</Card>
+
 
 		</div>
 	);
