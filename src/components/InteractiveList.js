@@ -14,7 +14,7 @@ function InteractiveList() {
 
 	return (
 		<div>
-			<Card sx={{mt: 4, mb: 2, backgroundColor: "#d15fee"}}>
+			<Card sx={{mt: 2, mb: 2, p: 2, backgroundColor: "#d15fee"}}>
 
 				<Typography variant="h3" sx={{textAlign: "center"}}>
 					Management
@@ -72,7 +72,7 @@ function InteractiveList() {
 			</Card>
 
 
-			<Card sx={{mt: 4, mb: 2, backgroundColor: "#90ee90"}}>
+			<Card sx={{mt: 2, mb: 2, p: 2, backgroundColor: "#90ee90"}}>
 
 				<Typography variant="h3" sx={{textAlign: "center"}}>
 					Technik
@@ -151,7 +151,7 @@ function InteractiveList() {
 				</List>
 			</Card>
 
-			<Card sx={{mt: 4, mb: 2, backgroundColor: "#00bfff"}}>
+			<Card sx={{mt: 2, mb: 2, p: 2, backgroundColor: "#00bfff"}}>
 
 				<Typography variant="h3" sx={{textAlign: "center"}}>
 					Design

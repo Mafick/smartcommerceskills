@@ -133,7 +133,7 @@ export default function SkillSearchTextField() {
 	return (
 		<Autocomplete
 			disablePortal
-			sx={{mt: 4, mb: 2}}
+			sx={{mt: 2, mb: 2}}
 			id="skillsearch"
 			options={top100Films}
 			renderInput={(params) => <TextField {...params} label="Skill Search"/>}

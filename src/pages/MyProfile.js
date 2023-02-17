@@ -11,6 +11,8 @@ import InteractiveList from "../components/InteractiveList";
 import './MyProfile.css';
 import SkillSearchTextField from "../components/SkillSearchTextField";
 import ColorToggleButton from "../components/ColorToggleButton";
+import {Card} from "@mui/material";
+import Button from "@mui/material/Button";
 
 function MyProfile() {
 	return (
@@ -19,11 +21,11 @@ function MyProfile() {
 
 			<ResponsiveAppBar/>
 
-			<Typography sx={{mt: 4, mb: 2}} variant="h6" component="div">
+			<Typography sx={{mt: 2, mb: 2}} variant="h6" component="div">
 				Profil von "Niels Horn"
 			</Typography>
 
-			<Box sx={{mt: 4, mb: 2}}>
+			<Card sx={{mt: 2, mb: 2, p: 2, textAlign: "center"}}>
 				<TextField
 					id="outlined-multiline-static"
 					label="Beschreibung"
@@ -31,20 +33,24 @@ function MyProfile() {
 					rows={6}
 					fullWidth
 				/>
-			</Box>
+				<Button variant="contained" sx={{mt: 2, mb: 2}}>Speichern</Button>
+			</Card>
 
-			<Box sx={{mt: 4, mb: 2, textAlign: "center"}}>
-				<ColorToggleButton/>
-			</Box>
+			<Card sx={{mt: 2, mb: 2, p: 2}}>
 
-			<Grid container spacing={2}>
-				<Grid item xs={12} md={6}>
-					<InteractiveList/>
+				<Box sx={{mt: 2, mb: 2, textAlign: "center"}}>
+					<ColorToggleButton/>
+				</Box>
+
+				<Grid container spacing={2}>
+					<Grid item xs={12} md={6}>
+						<InteractiveList/>
+					</Grid>
+					<Grid item xs={12} md={6}>
+						<SkillSearchTextField/>
+					</Grid>
 				</Grid>
-				<Grid item xs={12} md={6}>
-					<SkillSearchTextField/>
-				</Grid>
-			</Grid>
+			</Card>
 
 		</div>
 	);

@@ -17,12 +17,11 @@ import avatar3 from '../pictures/dummy/lgering.png';
 export default function AlignItemsList() {
 	return (
 		<List>
-			<ListItem
-				secondaryAction={
-					<IconButton edge="end" aria-label="delete">
-						<AccountBoxIcon/>
-					</IconButton>
-				}
+			<ListItem alignItems="flex-start"
+			          secondaryAction={
+				          <IconButton edge="end" aria-label="account">
+					          <AccountBoxIcon/>
+				          </IconButton>}
 			>
 				<ListItemAvatar>
 					<Avatar>
@@ -46,7 +45,12 @@ export default function AlignItemsList() {
 				/>
 			</ListItem>
 			<Divider variant="inset" component="li"/>
-			<ListItem alignItems="flex-start">
+			<ListItem alignItems="flex-start"
+			          secondaryAction={
+				          <IconButton edge="end" aria-label="account">
+					          <AccountBoxIcon/>
+				          </IconButton>}
+			>
 				<ListItemAvatar>
 					<Avatar alt="eLinde" src={avatar2}/>
 				</ListItemAvatar>
@@ -67,7 +71,12 @@ export default function AlignItemsList() {
 				/>
 			</ListItem>
 			<Divider variant="inset" component="li"/>
-			<ListItem alignItems="flex-start">
+			<ListItem alignItems="flex-start"
+			          secondaryAction={
+				          <IconButton edge="end" aria-label="account">
+					          <AccountBoxIcon/>
+				          </IconButton>}
+			>
 				<ListItemAvatar>
 					<Avatar alt="lGering" src={avatar3}/>
 				</ListItemAvatar>
